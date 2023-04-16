@@ -7,11 +7,11 @@ function Alert(props) {
     }
     return (
         <div style={{height:"50px"}}>
-        props.alert && <div className={`alert alert-${props.alert.type} alert-dismissible fade show`} role="alert">
+        {props.alert && <div className={`alert alert-${props.alert.type} alert-dismissible fade show`} role="alert">
             <strong> {capt(props.alert.type)} </strong> {props.alert.msg}
             {/* <strong>Holy guacamole!</strong> You should check in on some of those fields below. */}
             {/* <button type="button"  data-bs-dismiss="alert" ></button> */}
-        </div>
+        </div>}
         </div>
     )
 }
